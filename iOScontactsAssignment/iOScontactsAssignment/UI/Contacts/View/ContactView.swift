@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactView: View {
+    @StateObject var contactVM: ContactViewModel = .init()
     var body: some View {
         NavigationView {
             VStack {
@@ -38,7 +39,7 @@ struct ContactView: View {
                     VStack(alignment: .leading) {
                         HStack{
                             Text("CONTACTELE MELE")
-                                .font(.system(size: 17, weight: .bold))
+                                .font(.system(size: 15, weight: .bold))
                                 .foregroundColor(.gray)
                                 .baselineOffset(-10)
                             Spacer()
@@ -46,23 +47,18 @@ struct ContactView: View {
                         .padding([.leading, .trailing], AppConstants.ContactsScreen.horizontalPadding)
                         ScrollView(showsIndicators: false) {
                             VStack(alignment: .leading, spacing: 1) {
-                                CardPersonView(number: 0, name: "Senila Constantin", namePhoto: "SC")
-                                CardPersonView(number: 1, name: "Pop Andrei")
-                                CardPersonView(number: 1, name: "Senila Constantin", namePhoto: "SC")
-                                CardPersonView(number: 1, name: "Pop Andrei")
+                                ForEach(contactVM.listContact.indices, id: \.self) { index in
+                                    CardPersonView(number: (contactVM.listContact[index].id ?? 0) % 2, name: contactVM.listContact[index].name ?? "", namePhoto: contactVM.getNamePhoto(name: contactVM.listContact[index].name ?? ""))
+                                }
                             }
                         }
-                           
+                        
                         Spacer()
                     }
-                   
+                    
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
         }
     }
-}
-
-#Preview {
-    ContactView()
 }

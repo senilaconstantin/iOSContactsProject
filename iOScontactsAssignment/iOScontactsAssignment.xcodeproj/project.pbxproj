@@ -19,6 +19,10 @@
 		F50F1D432B6A3997002193EE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D422B6A3997002193EE /* ContactView.swift */; };
 		F50F1D452B6A3E3D002193EE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D442B6A3E3D002193EE /* AppConstants.swift */; };
 		F50F1D472B6A3EDB002193EE /* CardPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D462B6A3EDB002193EE /* CardPersonView.swift */; };
+		F50F1D492B6A43C2002193EE /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D482B6A43C2002193EE /* ContactViewModel.swift */; };
+		F50F1D4B2B6A440B002193EE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D4A2B6A440B002193EE /* UserModel.swift */; };
+		F50F1D4D2B6A454C002193EE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D4C2B6A454C002193EE /* ApiClient.swift */; };
+		F50F1D502B6A4578002193EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F50F1D4F2B6A4578002193EE /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		F50F1D422B6A3997002193EE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		F50F1D442B6A3E3D002193EE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F50F1D462B6A3EDB002193EE /* CardPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPersonView.swift; sourceTree = "<group>"; };
+		F50F1D482B6A43C2002193EE /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		F50F1D4A2B6A440B002193EE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F50F1D4C2B6A454C002193EE /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		FA7EE89DA5D72A286962C824 /* Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05F5DC307E9074B5D9A28A3 /* Pods_iOScontactsAssignment.framework in Frameworks */,
+				F50F1D502B6A4578002193EE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +192,7 @@
 		F50F1D3A2B6A37EB002193EE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F50F1D4C2B6A454C002193EE /* ApiClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -209,6 +218,7 @@
 		F50F1D3D2B6A3859002193EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F50F1D4A2B6A440B002193EE /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +235,7 @@
 		F50F1D3F2B6A386D002193EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F50F1D482B6A43C2002193EE /* ContactViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -246,6 +257,9 @@
 			dependencies = (
 			);
 			name = iOScontactsAssignment;
+			packageProductDependencies = (
+				F50F1D4F2B6A4578002193EE /* Alamofire */,
+			);
 			productName = iOScontactsAssignment;
 			productReference = F50F1D0C2B6A31C3002193EE /* iOScontactsAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -320,6 +334,9 @@
 				Base,
 			);
 			mainGroup = F50F1D032B6A31C3002193EE;
+			packageReferences = (
+				F50F1D4E2B6A4578002193EE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F50F1D0D2B6A31C3002193EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,9 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50F1D4D2B6A454C002193EE /* ApiClient.swift in Sources */,
 				F50F1D432B6A3997002193EE /* ContactView.swift in Sources */,
 				F50F1D452B6A3E3D002193EE /* AppConstants.swift in Sources */,
+				F50F1D492B6A43C2002193EE /* ContactViewModel.swift in Sources */,
 				F50F1D102B6A31C3002193EE /* iOScontactsAssignmentApp.swift in Sources */,
+				F50F1D4B2B6A440B002193EE /* UserModel.swift in Sources */,
 				F50F1D472B6A3EDB002193EE /* CardPersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,6 +790,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F50F1D4E2B6A4578002193EE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F50F1D4F2B6A4578002193EE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F50F1D4E2B6A4578002193EE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F50F1D042B6A31C3002193EE /* Project object */;
 }
