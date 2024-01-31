@@ -11,7 +11,7 @@ import SwiftUI
 struct iOScontactsAssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContactView()
         }
     }
 }

@@ -11,12 +11,14 @@
 		68CA0EE88BDE1F64715F36B2 /* Pods_iOScontactsAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404E75F7425DF751A7648AF8 /* Pods_iOScontactsAssignmentTests.framework */; };
 		E05F5DC307E9074B5D9A28A3 /* Pods_iOScontactsAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A569FE8B9A60DF2B430EF15 /* Pods_iOScontactsAssignment.framework */; };
 		F50F1D102B6A31C3002193EE /* iOScontactsAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D0F2B6A31C3002193EE /* iOScontactsAssignmentApp.swift */; };
-		F50F1D122B6A31C3002193EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D112B6A31C3002193EE /* ContentView.swift */; };
 		F50F1D142B6A31C6002193EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50F1D132B6A31C6002193EE /* Assets.xcassets */; };
 		F50F1D172B6A31C6002193EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50F1D162B6A31C6002193EE /* Preview Assets.xcassets */; };
 		F50F1D212B6A31C6002193EE /* iOScontactsAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D202B6A31C6002193EE /* iOScontactsAssignmentTests.swift */; };
 		F50F1D2B2B6A31C7002193EE /* iOScontactsAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D2A2B6A31C7002193EE /* iOScontactsAssignmentUITests.swift */; };
 		F50F1D2D2B6A31C7002193EE /* iOScontactsAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D2C2B6A31C7002193EE /* iOScontactsAssignmentUITestsLaunchTests.swift */; };
+		F50F1D432B6A3997002193EE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D422B6A3997002193EE /* ContactView.swift */; };
+		F50F1D452B6A3E3D002193EE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D442B6A3E3D002193EE /* AppConstants.swift */; };
+		F50F1D472B6A3EDB002193EE /* CardPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D462B6A3EDB002193EE /* CardPersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,6 @@
 		D1B3B91C7E4C17DBD976B674 /* Pods-iOScontactsAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOScontactsAssignment.debug.xcconfig"; path = "Target Support Files/Pods-iOScontactsAssignment/Pods-iOScontactsAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		F50F1D0C2B6A31C3002193EE /* iOScontactsAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOScontactsAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50F1D0F2B6A31C3002193EE /* iOScontactsAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOScontactsAssignmentApp.swift; sourceTree = "<group>"; };
-		F50F1D112B6A31C3002193EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F50F1D132B6A31C6002193EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F50F1D162B6A31C6002193EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F50F1D1C2B6A31C6002193EE /* iOScontactsAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOScontactsAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +56,9 @@
 		F50F1D262B6A31C7002193EE /* iOScontactsAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOScontactsAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50F1D2A2B6A31C7002193EE /* iOScontactsAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOScontactsAssignmentUITests.swift; sourceTree = "<group>"; };
 		F50F1D2C2B6A31C7002193EE /* iOScontactsAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOScontactsAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F50F1D422B6A3997002193EE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		F50F1D442B6A3E3D002193EE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F50F1D462B6A3EDB002193EE /* CardPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPersonView.swift; sourceTree = "<group>"; };
 		FA7EE89DA5D72A286962C824 /* Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,7 +110,6 @@
 				A506E0BAC9C2C0FE42426ECD /* Pods-iOScontactsAssignmentTests.debug.xcconfig */,
 				CA8A7646316BB255AF325A95 /* Pods-iOScontactsAssignmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,8 +138,10 @@
 		F50F1D0E2B6A31C3002193EE /* iOScontactsAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				F50F1D3B2B6A3803002193EE /* UI */,
+				F50F1D3A2B6A37EB002193EE /* Services */,
+				F50F1D392B6A37D0002193EE /* Constants */,
 				F50F1D0F2B6A31C3002193EE /* iOScontactsAssignmentApp.swift */,
-				F50F1D112B6A31C3002193EE /* ContentView.swift */,
 				F50F1D132B6A31C6002193EE /* Assets.xcassets */,
 				F50F1D152B6A31C6002193EE /* Preview Content */,
 			);
@@ -166,6 +171,62 @@
 				F50F1D2C2B6A31C7002193EE /* iOScontactsAssignmentUITestsLaunchTests.swift */,
 			);
 			path = iOScontactsAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		F50F1D392B6A37D0002193EE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F50F1D442B6A3E3D002193EE /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F50F1D3A2B6A37EB002193EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F50F1D3B2B6A3803002193EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F50F1D3C2B6A384B002193EE /* Contacts */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F50F1D3C2B6A384B002193EE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F50F1D3F2B6A386D002193EE /* ViewModel */,
+				F50F1D3E2B6A3865002193EE /* View */,
+				F50F1D3D2B6A3859002193EE /* Model */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F50F1D3D2B6A3859002193EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F50F1D3E2B6A3865002193EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F50F1D422B6A3997002193EE /* ContactView.swift */,
+				F50F1D462B6A3EDB002193EE /* CardPersonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F50F1D3F2B6A386D002193EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,8 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50F1D122B6A31C3002193EE /* ContentView.swift in Sources */,
+				F50F1D432B6A3997002193EE /* ContactView.swift in Sources */,
+				F50F1D452B6A3E3D002193EE /* AppConstants.swift in Sources */,
 				F50F1D102B6A31C3002193EE /* iOScontactsAssignmentApp.swift in Sources */,
+				F50F1D472B6A3EDB002193EE /* CardPersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
