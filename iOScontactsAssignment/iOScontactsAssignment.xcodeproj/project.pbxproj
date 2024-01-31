@@ -26,6 +26,7 @@
 		F50F1D522B6A4B50002193EE /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D512B6A4B50002193EE /* AddContactView.swift */; };
 		F50F1D542B6A4CC9002193EE /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D532B6A4CC9002193EE /* AppTextField.swift */; };
 		F50F1D562B6A5141002193EE /* SelectedContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D552B6A5141002193EE /* SelectedContactView.swift */; };
+		F50F1D582B6A5B43002193EE /* CheckIfActiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D572B6A5B43002193EE /* CheckIfActiveTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F50F1D512B6A4B50002193EE /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		F50F1D532B6A4CC9002193EE /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		F50F1D552B6A5141002193EE /* SelectedContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedContactView.swift; sourceTree = "<group>"; };
+		F50F1D572B6A5B43002193EE /* CheckIfActiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfActiveTests.swift; sourceTree = "<group>"; };
 		FA7EE89DA5D72A286962C824 /* Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F50F1D202B6A31C6002193EE /* iOScontactsAssignmentTests.swift */,
+				F50F1D572B6A5B43002193EE /* CheckIfActiveTests.swift */,
 			);
 			path = iOScontactsAssignmentTests;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50F1D212B6A31C6002193EE /* iOScontactsAssignmentTests.swift in Sources */,
+				F50F1D582B6A5B43002193EE /* CheckIfActiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,7 +642,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,7 +672,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
