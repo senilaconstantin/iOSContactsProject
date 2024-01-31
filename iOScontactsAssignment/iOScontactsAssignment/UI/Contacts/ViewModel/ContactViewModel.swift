@@ -40,4 +40,9 @@ class ContactViewModel: ObservableObject {
         
         return String(firstLetter) + String(secondLetter)
     }
+    
+    func addContact(nume: String, prenume: String, telefon: String, email: String) {
+        let contact: UserModel = UserModel.init(id: Int.random(in: 1000000..<9999999), name: nume + " " + prenume, email: email, gender: telefon, status: "active")
+        listContact.append(contact)
+    }
 }

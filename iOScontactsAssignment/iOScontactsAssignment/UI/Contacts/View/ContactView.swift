@@ -17,20 +17,24 @@ struct ContactView: View {
                         .font(.system(size: 30, weight: .bold))
                     
                     Spacer()
-                    
-                    ZStack {
-                        Image(systemName: "person.fill.badge.plus")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundColor(.gray)
+                    NavigationLink {
+                        AddContactView()
+                            .environmentObject(contactVM)
+                    } label: {
+                        ZStack {
+                            Image(systemName: "person.fill.badge.plus")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.all, 8)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
                     }
-                    .padding(.all, 8)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.gray, lineWidth: 1)
-                    )
                 }
                 .padding([.leading, .trailing], AppConstants.ContactsScreen.horizontalPadding)
                 
@@ -52,10 +56,8 @@ struct ContactView: View {
                                 }
                             }
                         }
-                        
                         Spacer()
                     }
-                    
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
