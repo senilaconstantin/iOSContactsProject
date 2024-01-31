@@ -25,7 +25,7 @@ struct SelectedContactView: View {
                         .foregroundColor(.gray)
                         .frame(width: 125, height: 125)
                     
-                    Text(contactVM.getNamePhoto(name: contactVM.listContact[index].name ?? "A T"))
+                    Text(contactVM.getNamePhoto(name: contactVM.getName(index: index)))
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.white)
                 }
@@ -42,7 +42,7 @@ struct SelectedContactView: View {
                         .font(.system(size: 12))
                     Spacer()
                         .frame(height: 5)
-                    Text(contactVM.listContact[index].email ?? "")
+                    Text(contactVM.getEmail(index: index))
                         .font(.system(size: 17))
                         .foregroundColor(.blue)
                 }

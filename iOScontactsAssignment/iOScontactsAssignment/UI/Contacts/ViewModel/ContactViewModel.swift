@@ -28,6 +28,15 @@ class ContactViewModel: ObservableObject {
             }
         })
     }
+    func getParityId(index: Int) -> Int {
+        return (self.listContact[index].id ?? 0) % 2
+    }
+    func getName(index: Int) -> String {
+        return self.listContact[index].name ?? ""
+    }
+    func getEmail(index: Int) -> String {
+        return self.listContact[index].email ?? ""
+    }
     func isActive(status: String) -> Bool {
         return status == "active"
     }

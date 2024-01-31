@@ -54,7 +54,7 @@ struct ContactView: View {
                                 ForEach(contactVM.listContact.indices, id: \.self) { index in
                                     NavigationLink(destination: SelectedContactView(index: index)
                                         .environmentObject(contactVM)) {
-                                            CardPersonView(number: (contactVM.listContact[index].id ?? 0) % 2, name: contactVM.listContact[index].name ?? "", namePhoto: contactVM.getNamePhoto(name: contactVM.listContact[index].name ?? ""))
+                                            CardPersonView(number: contactVM.getParityId(index: index), name: contactVM.getName(index: index), namePhoto: contactVM.getNamePhoto(name: contactVM.getName(index: index)))
                                         }
                                 }
                             }
