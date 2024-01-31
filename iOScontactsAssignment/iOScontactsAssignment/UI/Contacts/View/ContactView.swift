@@ -52,7 +52,10 @@ struct ContactView: View {
                         ScrollView(showsIndicators: false) {
                             VStack(alignment: .leading, spacing: 1) {
                                 ForEach(contactVM.listContact.indices, id: \.self) { index in
-                                    CardPersonView(number: (contactVM.listContact[index].id ?? 0) % 2, name: contactVM.listContact[index].name ?? "", namePhoto: contactVM.getNamePhoto(name: contactVM.listContact[index].name ?? ""))
+                                    NavigationLink(destination: SelectedContactView(index: index)
+                                        .environmentObject(contactVM)) {
+                                            CardPersonView(number: (contactVM.listContact[index].id ?? 0) % 2, name: contactVM.listContact[index].name ?? "", namePhoto: contactVM.getNamePhoto(name: contactVM.listContact[index].name ?? ""))
+                                        }
                                 }
                             }
                         }

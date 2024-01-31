@@ -25,6 +25,7 @@
 		F50F1D502B6A4578002193EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F50F1D4F2B6A4578002193EE /* Alamofire */; };
 		F50F1D522B6A4B50002193EE /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D512B6A4B50002193EE /* AddContactView.swift */; };
 		F50F1D542B6A4CC9002193EE /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D532B6A4CC9002193EE /* AppTextField.swift */; };
+		F50F1D562B6A5141002193EE /* SelectedContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F1D552B6A5141002193EE /* SelectedContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F50F1D4C2B6A454C002193EE /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		F50F1D512B6A4B50002193EE /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		F50F1D532B6A4CC9002193EE /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		F50F1D552B6A5141002193EE /* SelectedContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedContactView.swift; sourceTree = "<group>"; };
 		FA7EE89DA5D72A286962C824 /* Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOScontactsAssignment_iOScontactsAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -234,6 +236,7 @@
 				F50F1D462B6A3EDB002193EE /* CardPersonView.swift */,
 				F50F1D512B6A4B50002193EE /* AddContactView.swift */,
 				F50F1D532B6A4CC9002193EE /* AppTextField.swift */,
+				F50F1D552B6A5141002193EE /* SelectedContactView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50F1D562B6A5141002193EE /* SelectedContactView.swift in Sources */,
 				F50F1D4D2B6A454C002193EE /* ApiClient.swift in Sources */,
 				F50F1D432B6A3997002193EE /* ContactView.swift in Sources */,
 				F50F1D542B6A4CC9002193EE /* AppTextField.swift in Sources */,
